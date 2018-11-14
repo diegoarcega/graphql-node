@@ -1,0 +1,39 @@
+{
+  "name": "graphql-server",
+  "version": "1.0.0",
+  "description": "node server with graphql",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -e js,graphql -x node index.js",
+    "dev": "nodemon -e js,graphql -x node --inspect index.js"
+  },
+  "keywords": [
+    "graphql",
+    "node"
+  ],
+  "author": "Diego Arcega",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "nodemon": "^1.18.6"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^6.1.0",
+    "graphql": "^14.0.2",
+    "graphql-cli": "^2.17.0",
+    "graphql-yoga": "^1.16.7",
+    "jsonwebtoken": "^8.3.0",
+    "npm-run-all": "^4.1.3"
+  }
+}
